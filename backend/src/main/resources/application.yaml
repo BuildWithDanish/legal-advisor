@@ -1,3 +1,16 @@
 spring:
   application:
     name: backend
+
+  datasource:
+    url: ${db_url}
+    username: postgres
+    password: ${db_pass}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+file:
+  upload-dir: uploads/documents
